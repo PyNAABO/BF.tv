@@ -34,8 +34,9 @@ for option in options:
     
 driver = webdriver.Chrome(options = chrome_options)
 
-driver.get('http://github.com')
+driver.get('https://bigfuck.tv/best/')
 print(driver.title)
+driver.save_screenshot("./image.png")
 with open('./GitHub_Action_Results.txt', 'w') as f:
     string = f"This was written with a GitHub action {driver.title}"+"-"+str(datetime.now())
     f.write(string)
