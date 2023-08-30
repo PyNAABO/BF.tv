@@ -21,7 +21,7 @@ jobs:
         run: |
           sudo apt update
           sudo apt install -y chromium-chromedriver
-          pip install selenium pyvirtualdisplay
+          pip install selenium pyvirtualdisplay chromedriver-autoinstaller
       
       - name: Run Selenium Script
         run: python Selenium-Template.py
