@@ -1,3 +1,7 @@
+from fastapi import FastAPI
+
+app = FastAPI()
+
 from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -42,3 +46,10 @@ with open('./GitHub_Action_Results.txt', 'w') as f:
     string = f"This was written with a GitHub action {driver.title}"+"-"+str(datetime.now())
     f.write(string)
 driver.save_screenshot("./image.png")
+
+
+@app.get("/")
+def home():
+	return {"response": "Hello World"}
+
+uvicorn.run(app, host="0.0.0.0", port="8688")
