@@ -4,13 +4,13 @@ from PIL import Image
 from datetime import datetime
 from selenium import webdriver
 import chromedriver_autoinstaller
-# from pyvirtualdisplay import Display
+from pyvirtualdisplay import Display
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 
 
-# display = Display(visible=0, size=(800, 800))
-# display.start()
+display = Display(visible=0, size=(800, 800))
+display.start()
 
 
 chromedriver_autoinstaller.install()
