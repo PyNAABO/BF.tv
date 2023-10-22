@@ -1,8 +1,11 @@
 name: Run Selenium
 on:
+  push:
+    branches:
+      - main  # Adjust this according to your branch name
   workflow_dispatch:
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '0 */2 * * *'  # Adjust the cron schedule as needed
 jobs:
   scrape:
     runs-on: ubuntu-latest
