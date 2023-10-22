@@ -56,7 +56,7 @@ def capture_long_screenshot(url, output_file):
 
 
 if __name__ == "__main__":
-    LINK = "https://pynaabo.blogspot.com/"
+    LINK = ["https://pynaabo.blogspot.com/", "https://thepiratebay.org/search.php?q=top100:all"][1]
     driver.get(LINK)
 
     with open("./GitHub_Action_Results.txt", "w") as f:
