@@ -5,9 +5,6 @@ from datetime import datetime
 from selenium import webdriver
 import chromedriver_autoinstaller
 from pyvirtualdisplay import Display
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
-
 
 display = Display(visible=0, size=(800, 800))
 display.start()
@@ -18,13 +15,10 @@ chromedriver_autoinstaller.install()
 chrome_options = webdriver.ChromeOptions()
 options = [
     # Define window size here
-    "--window-size=1200,1200",
+    "--window-size=1920,1200",
     "--ignore-certificate-errors"
-
     # "--headless",
     # "--disable-gpu",
-    # "--window-size=1920,1200",
-    # "--ignore-certificate-errors",
     # "--disable-extensions",
     # "--no-sandbox",
     # "--disable-dev-shm-usage",
@@ -38,31 +32,21 @@ for option in options:
 driver = webdriver.Chrome(options=chrome_options)
 driver.implicitly_wait(11)
 
-driver.get('https://bigfuck.tv/best/')
-print(driver.title)
-driver.refresh()
-with open('./GitHub_Action_Results.txt', 'w') as f:
-    string = f"This was written with a GitHub action {driver.title}"+"-"+str(
-        datetime.now())
-    f.write(string)
-driver.save_screenshot("./image.png")
-
 
 def capture_long_screenshot(url, output_file):
     try:
         driver.get(url)
         viewport_height = driver.execute_script("return window.innerHeight")
-        total_height = driver.execute_script(
-            "return document.body.scrollHeight")
-        screenshot = Image.new('RGB', (driver.execute_script(
-            "return window.innerWidth"), total_height))
+        total_height = driver.execute_script("return document.body.scrollHeight")
+        screenshot = Image.new(
+            "RGB", (driver.execute_script("return window.innerWidth"), total_height)
+        )
         offset = 0
 
         while offset < total_height:
             driver.execute_script(f"window.scrollTo(0, {offset});")
             time.sleep(1)
-            screenshot_part = Image.open(
-                io.BytesIO(driver.get_screenshot_as_png()))
+            screenshot_part = Image.open(io.BytesIO(driver.get_screenshot_as_png()))
             screenshot.paste(screenshot_part, (0, offset))
             offset += viewport_height
 
@@ -71,5 +55,12 @@ def capture_long_screenshot(url, output_file):
         print("ERROR:", e)
 
 
-capture_long_screenshot(url="https://bigfuck.tv/best/",
-                        output_file="./long_SS.png")
+if __name__ == "__main__":
+    LINK = "https://pynaabo.blogspot.com/"
+    driver.get(LINK)
+
+    with open("./GitHub_Action_Results.txt", "w") as f:
+        string = f"This was written with a GitHub action {driver.title} - {str(datetime.now())}"
+        f.write(string)
+
+    capture_long_screenshot(url=LINK, output_file="./long_SS.png")
