@@ -1,13 +1,16 @@
 import io
 import time
-from PIL import Image
 from datetime import datetime
+
+from PIL import Image
 from selenium import webdriver
 import chromedriver_autoinstaller
 from pyvirtualdisplay import Display
 
+
 display = Display(visible=0, size=(800, 800))
 display.start()
+chars_not_allowed = '~!@#$%^&*()_-+""/\:"|<>?,./'
 
 
 chromedriver_autoinstaller.install()
@@ -54,13 +57,17 @@ def capture_long_screenshot(url, output_file):
     except Exception as e:
         print("ERROR:", e)
 
+def main(links):
+    for link in links:
+        driver.get(link)
+
+        with open("./GitHub_Action_Results.txt", "a+") as f:
+            string = f"Screenshot Taken : {driver.title} : {str(datetime.now())}"
+            f.write(string)
+        file_name = f"./Screenshots/{str(driver.title).strip(chars_not_allowed)}.png"
+        capture_long_screenshot(url=link, output_file=file_name)
+
 
 if __name__ == "__main__":
-    LINK = ["https://pynaabo.blogspot.com/", "https://thepiratebay.org/search.php?q=top100:all"][1]
-    driver.get(LINK)
-
-    with open("./GitHub_Action_Results.txt", "w") as f:
-        string = f"This was written with a GitHub action {driver.title} - {str(datetime.now())}"
-        f.write(string)
-
-    capture_long_screenshot(url=LINK, output_file="./long_SS.png")
+    links = ["https://pynaabo.blogspot.com/", "https://thepiratebay.org/search.php?q=top100:all"]
+    main(links=links)
