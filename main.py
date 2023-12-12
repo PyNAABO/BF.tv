@@ -63,7 +63,7 @@ def main(links):
 
         with open("./GitHub_Action_Results.txt", "a+") as f:
             string = f"Screenshot Taken : {driver.title} : {str(datetime.now())}"
-            f.write(string)
+            f.write(string+"\n")
         file_name = f"./Screenshots/{str(driver.title).strip(chars_not_allowed)}.png"
         capture_long_screenshot(url=link, output_file=file_name)
 
