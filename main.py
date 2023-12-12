@@ -61,7 +61,7 @@ def main(links):
     for link in links:
         driver.get(link)
 
-        with open("./GitHub_Action_Results.txt", "a+") as f:
+        with open("./LOGS.txt", "a+") as f:
             string = f"Screenshot Taken : {driver.title} : {str(datetime.now())}"
             f.write(string+"\n")
         file_name = f"./Screenshots/{str(driver.title).strip(chars_not_allowed)}.png"
