@@ -25,7 +25,7 @@ jobs:
       - name: Updating PIP
         run: pip install --upgrade pip
       - name: Installing all necessary packages
-        run: pip install chromedriver-autoinstaller selenium pyvirtualdisplay Pillow 
+        run: pip install typing-extensions chromedriver-autoinstaller selenium pyvirtualdisplay Pillow 
       - name: Install xvfb
         run: sudo apt-get install xvfb
 
