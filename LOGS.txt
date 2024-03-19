@@ -2354,3 +2354,5 @@ Screenshot Taken : PyNAABO : 2024-03-19 14:01:26.764851
 Screenshot Taken : The Pirate Bay - The galaxy's most resilient bittorrent site : 2024-03-19 14:01:34.936503
 Screenshot Taken : PyNAABO : 2024-03-19 16:07:18.917931
 Screenshot Taken : The Pirate Bay - The galaxy's most resilient bittorrent site : 2024-03-19 16:07:27.646766
+Screenshot Taken : PyNAABO : 2024-03-19 18:07:18.170901
+Screenshot Taken : The Pirate Bay - The galaxy's most resilient bittorrent site : 2024-03-19 18:07:25.975072
