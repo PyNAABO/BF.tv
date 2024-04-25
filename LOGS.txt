@@ -3212,3 +3212,5 @@ Screenshot Taken : PyNAABO : 2024-04-24 22:02:37.323081
 Screenshot Taken : The Pirate Bay - The galaxy's most resilient bittorrent site : 2024-04-24 22:02:47.129449
 Screenshot Taken : PyNAABO : 2024-04-25 00:30:12.452506
 Screenshot Taken : The Pirate Bay - The galaxy's most resilient bittorrent site : 2024-04-25 00:30:22.584900
+Screenshot Taken : PyNAABO : 2024-04-25 02:18:31.720704
+Screenshot Taken : thepiratebay.org | 521: Web server is down : 2024-04-25 02:18:35.360291
