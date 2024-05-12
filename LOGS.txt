@@ -3624,3 +3624,5 @@ Screenshot Taken : PyNAABO : 2024-05-12 04:07:52.122727
 Screenshot Taken : thepiratebay.org | 504: Gateway time-out : 2024-05-12 04:08:56.442581
 Screenshot Taken : PyNAABO : 2024-05-12 06:09:25.466836
 Screenshot Taken : thepiratebay.org | 504: Gateway time-out : 2024-05-12 06:10:29.478097
+Screenshot Taken : PyNAABO : 2024-05-12 08:08:35.018835
+Screenshot Taken : The Pirate Bay - The galaxy's most resilient bittorrent site : 2024-05-12 08:08:43.979021
