@@ -3934,3 +3934,5 @@ Screenshot Taken : PyNAABO : 2024-05-25 04:07:33.352611
 Screenshot Taken : thepiratebay.org | 522: Connection timed out : 2024-05-25 04:08:15.421147
 Screenshot Taken : PyNAABO : 2024-05-25 06:08:30.688134
 Screenshot Taken : thepiratebay.org | 522: Connection timed out : 2024-05-25 06:09:13.035282
+Screenshot Taken : PyNAABO : 2024-05-25 08:08:15.004933
+Screenshot Taken : The Pirate Bay - The galaxy's most resilient bittorrent site : 2024-05-25 08:08:25.571936
