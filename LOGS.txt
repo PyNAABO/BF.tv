@@ -5774,3 +5774,5 @@ Screenshot Taken : PyNAABO : 2024-08-10 16:08:06.451752
 Screenshot Taken : thepiratebay.org | 521: Web server is down : 2024-08-10 16:08:09.893655
 Screenshot Taken : PyNAABO : 2024-08-10 18:07:43.094735
 Screenshot Taken : thepiratebay.org | 521: Web server is down : 2024-08-10 18:07:46.562481
+Screenshot Taken : PyNAABO : 2024-08-10 20:06:42.421294
+Screenshot Taken : thepiratebay.org | 521: Web server is down : 2024-08-10 20:06:45.922210
