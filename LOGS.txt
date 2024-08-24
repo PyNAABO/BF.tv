@@ -6092,3 +6092,5 @@ Screenshot Taken : PyNAABO : 2024-08-23 22:06:47.488993
 Screenshot Taken : The Pirate Bay - The galaxy's most resilient bittorrent site : 2024-08-23 22:06:55.311429
 Screenshot Taken : PyNAABO : 2024-08-24 00:31:50.122575
 Screenshot Taken : thepiratebay.org | 520: Web server is returning an unknown error : 2024-08-24 00:33:12.455292
+Screenshot Taken : PyNAABO : 2024-08-24 02:30:12.373905
+Screenshot Taken : The Pirate Bay - The galaxy's most resilient bittorrent site : 2024-08-24 02:30:19.002831
